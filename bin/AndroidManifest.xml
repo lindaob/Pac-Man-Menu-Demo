@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.pacman"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pac_man"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="example.pacman.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Play"
+            android:label="@string/play" >
+            <intent-filter>
+                <action android:name="example.pacman.Play" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Offer"
+            android:label="@string/offer" >
+            <intent-filter>
+                <action android:name="example.pacman.Offer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Location"
+            android:label="@string/location" >
+            <intent-filter>
+                <action android:name="example.pacman.Location" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Leader"
+            android:label="@string/leader" >
+            <intent-filter>
+                <action android:name="example.pacman.Leader" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Offline"
+            android:label="@string/offline" >
+            <intent-filter>
+                <action android:name="example.pacman.Offline" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.pacman.Account"
+            android:label="@string/account" >
+            <intent-filter>
+                <action android:name="example.pacman.Account" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
